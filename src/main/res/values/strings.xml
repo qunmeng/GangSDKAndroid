@@ -1,0 +1,96 @@
+<resources>
+
+    <string name="app_name">ganglib</string>
+    <!--text-->
+    <string name="gang_id_text">ID</string>
+    <string name="gang_leader_text">管理</string>
+    <string name="gang_level_text">等级</string>
+    <string name="gang_build_text">建设</string>
+    <string name="gang_member_text">成员</string>
+    <string name="gang_active_text">活跃</string>
+    <string name="gang_caifu_text">财富</string>
+    <string name="gang_declaration_text">宣言</string>
+    <string name="gang_task_week_text">周常</string>
+    <string name="gang_task_day_text">日常</string>
+
+    <!--button-->
+    <string name="gang_apply_btn">申请加入</string>
+    <string name="gang_cancel_apply_btn">取消申请</string>
+    <string name="gang_invite_agree_btn">同意</string>
+    <string name="gang_invite_against_btn">拒绝</string>
+
+    <string name="gang_task_sign_btn">签到</string>
+    <string name="gang_task_receive_btn">领取</string>
+    <string name="gang_task_doing_btn">进行中</string>
+    <string name="gang_task_complete_btn">已完成</string>
+    <!--没有社群start-->
+
+    <!--提示消息-->
+    <string name="message_gang_recruit_edit_null">请输入内容</string>
+    <string name="message_gang_invite_against">拒绝加入</string>
+    <string name="message_gang_donate">请输入捐赠数量</string>
+    <string name="message_gang_manage_publish_announcements">公告内容不能超过50个字</string>
+    <string name="message_gang_update_nickname_size">昵称不能超过7个汉字</string>
+    <string name="message_gang_update_nickname_null">昵称不能为空</string>
+    <string name="message_gang_manage_update_role">职业名称不能为空</string>
+    <string name="message_gang_member_search">昵称或者ID不能为空</string>
+    <string name="message_gang_member_add">昵称不能为空</string>
+
+    <string name="gangout_chat_tab">聊天频道</string>
+    <string name="gang_apply_tab">已申请</string>
+    <string name="gang_invite_tab">邀请加入</string>
+
+    <string name="gang_recruit_tab">招募频道</string>
+    <string name="gang_chat_single_tab">私聊频道</string>
+
+    <!--没有社群end-->
+
+    <!--加入社群 start-->
+    <!--tab-->
+    <string name="gang_info_tab">信息</string>
+    <string name="gangin_chat_tab">聊天</string>
+    <string name="gang_member_tab">成员</string>
+    <string name="gang_manage_tab">管理</string>
+    <string name="gang_task_tab">任务</string>
+    <string name="gang_mine_tab">社群频道</string>
+    <string name="gang_rank_renqi_tab">人气榜</string>
+    <string name="gang_rank_level_tab">等级榜</string>
+    <string name="gang_rank_caifu_tab">财富榜</string>
+
+    <!--管理-->
+    <string name="manage_invite_list_title">申请列表</string>
+    <string name="manage_role_access_title">职位管理</string>
+
+    <!--成员-->
+    <string name="member_notalk">禁言室</string>
+    <string name="member_active">活跃榜</string>
+    <string name="member_contribute">贡献榜</string>
+    <string name="member_sort">排行榜</string>
+    <string name="member_addmember">添加成员</string>
+    <string name="member_search">搜索</string>
+
+    <string name="member_sort_renqi">人气</string>
+    <string name="member_sort_caifu">财富</string>
+    <string name="member_sort_level">等级</string>
+    <string name="member_sort_number">人数</string>
+
+    <string name="refresh_footer_loading">正在加载中…</string>
+    <string name="refresh_footer_network_error">点击重新加载</string>
+    <string name="refresh_footer_end">没有更多</string>
+    <!--加入社群 end-->
+
+    <string name="gang_game_center">游戏</string>
+    <string name="gang_message_center">消息通知</string>
+    <string name="gang_user_center">个人中心</string>
+    <string name="gang_pay_center">充值</string>
+
+    <!--在玩游戏提示-->
+    <string name="xlgame_download">您的设备中未安装此游戏，点击下方下载按钮下载游戏</string>
+    <string name="xlgame_start">您的设备已安装此游戏，点击下方启动按钮进入游戏</string>
+    <string name="xlgame_playing">您已在当前游戏中</string>
+
+    <!--网络提示-->
+    <string name="xlnetstates_type_mobile">您当前处于移动网络，请确认是否下载？</string>
+    <string name="xlnetstates_type_wifi">请确认是否下载？</string>
+    <string name="xlnetstates_type_unconnected">您当前未连接网络，请检查网络</string>
+</resources>

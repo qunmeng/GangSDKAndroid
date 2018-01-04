@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="com.qm.gangsdk.ui">
+
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity android:name=".view.gangin.InGangTabActivity"
+            android:theme="@style/XLAppThemeFull"/>
+        <!--没有社群-->
+        <activity android:name=".view.gangout.OutGangTabActivity"
+            android:theme="@style/XLAppThemeFull" />
+        <!--创建社群-->
+        <activity android:name=".view.gangout.create.GangCreateActivity"
+            android:theme="@style/XLAppThemeFull"/>
+
+        <!--社群申请管理-->
+        <activity android:name=".view.gangin.manage.ManageApplyActivity"
+            android:theme="@style/XLAppThemeFull" />
+
+        <activity android:name=".view.gangin.members.MemberListActivity"
+            android:theme="@style/XLAppThemeFull"/>
+
+        <activity android:name=".view.gangin.members.MemberInfoActivity"
+            android:theme="@style/XLAppThemeFull"/>
+
+        <activity android:name=".view.gangin.manage.ManageRoleAccessActivity"
+            android:theme="@style/XLAppThemeFull"/>
+
+        <activity android:name=".view.gangcenter.game.GangCenterGameActivity"
+            android:theme="@style/XLAppThemeFull"/>
+
+        <activity android:name=".view.gangcenter.message.GangCenterMessageActivity"
+            android:theme="@style/XLAppThemeFull"/>
+
+        <activity android:name=".view.gangcenter.user.GangCenterUserActivity"
+            android:theme="@style/XLAppThemeFull"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="229dip"
+    android:layout_height="246dip"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="229dip"
+        android:layout_height="246dip"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="223dip"
+            android:layout_height="240dip"
+            android:layout_marginTop="6dip"
+            android:background="@mipmap/qm_bg_pop_out">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:gravity="center"
+                android:text="升 级"
+                android:textStyle="bold"
+                android:textColor="@color/xlmanager_dialog_improvelevel_text_title_color"
+                android:textSize="19sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvTitle"
+                android:background="@mipmap/qm_bg_pop_in">
+
+                <RelativeLayout
+                    android:id="@+id/viewContent"
+                    android:layout_width="195dip"
+                    android:layout_height="85dip"
+                    android:layout_marginTop="12dip"
+                    android:layout_centerHorizontal="true"
+                    android:padding="18dip"
+                    android:background="@drawable/qm_bg_pop_improve_level_content">
+
+                    <TextView
+                        android:id="@+id/textLevelImprove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="社群等级: lv1>>L2"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/xlmanager_dialog_improvelevel_text_content_color"/>
+
+                    <TextView
+                        android:id="@+id/textNumberImprove"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="人数提升: 100000>>200000"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/xlmanager_dialog_improvelevel_text_content_color"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textGangImproveLevelMessage"
+                    android:layout_below="@+id/viewContent"
+                    android:layout_above="@+id/relativeBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:paddingTop="8dip"
+                    android:paddingBottom="8dip"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textSize="11sp"
+                    android:textColor="@color/xlmanager_dialog_improvelevel_text_hint_color" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginRight="18dip">
+
+                    <Button
+                        android:id="@+id/btnConfirm"
+                        android:layout_width="90dip"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:text="确认"
+                        android:textStyle="bold"
+                        android:textColor="@color/xl_dialog_button_confirm_color"
+                        android:background="@mipmap/qm_btn_pop_sure" />
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="90dip"
+                        android:layout_height="match_parent"
+                        android:text="取消"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/xl_dialog_button_confirm_color"                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/qm_btn_pop_cancel"  />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textClose"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/qm_btn_pop_close" />
+    </RelativeLayout>
+</RelativeLayout>
+

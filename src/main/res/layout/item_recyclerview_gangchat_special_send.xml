@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="63dip"
+    android:paddingRight="23dip">
+
+    <ImageView
+        android:id="@+id/imageSendUserPic"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imageSendUserPic"
+        android:layout_alignTop="@+id/imageSendUserPic"
+        android:orientation="vertical"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:background="@drawable/qm_bg_gangchat_right">
+
+        <LinearLayout
+            android:id="@+id/linearSendUserInfo"
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_height="22dip"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="20dip">
+
+            <ImageView
+                android:id="@+id/imageGangIcon"
+                android:layout_width="19dip"
+                android:layout_height="19dip"
+                android:layout_marginRight="5dip"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/textSendUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="22dip"
+                android:textColor="@color/xlgangchat_item_gang_name_color"
+                android:textSize="13sp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/RlClickableView"
+            android:layout_below="@id/linearFromUserInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dip"
+            android:paddingBottom="10dip"
+            android:paddingLeft="9dip"
+            android:paddingRight="20dip"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageViewIcon"
+                android:layout_width="46dip"
+                android:layout_height="46dip"
+                android:src = "@mipmap/ic_launcher"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="141dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/imageViewIcon"
+                android:text="8888888888888888888888888888888888888888888"
+                android:textSize="15sp"
+                android:textColor="@color/xlgangchat_item_chat_right_text_color"
+                android:lines="2"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/textViewContent"
+                android:layout_width="141dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/imageViewIcon"
+                android:layout_below="@+id/textViewTitle"
+                android:text="88888888888888888888888888888888888888888888888888888888888888888"
+                android:textSize="11sp"
+                android:textColor="@color/xlgangchat_item_chat_right_second_text_color"
+                android:lines="2"
+                android:ellipsize="end"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+

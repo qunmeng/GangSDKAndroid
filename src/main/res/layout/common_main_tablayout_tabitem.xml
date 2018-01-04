@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="71dip"
+    android:layout_height="32dip">
+
+    <RelativeLayout
+        android:layout_width="71dip"
+        android:layout_height="32dip">
+
+        <TextView
+            android:id="@+id/textTabTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/xl_tab_item"
+            android:textColor="@color/xlgang_text_tab_normal_color" />
+
+        <ImageView
+            android:id="@+id/imageTabTedPoint"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:src="@mipmap/qm_icon_redpoint"
+            android:scaleType="centerInside"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

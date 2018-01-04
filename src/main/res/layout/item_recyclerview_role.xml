@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewPrent"
+    android:layout_width="match_parent"
+    android:layout_height="30dip"
+    android:paddingLeft="3dip"
+    android:paddingRight="3dip">
+
+    <TextView
+        android:id="@+id/textRoleName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textSize="15sp"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="40dip"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:textColor="@color/xlroleaccess_item_role_text_normal_color"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+    
+    <ImageView
+        android:id="@+id/imageRoleEdit"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:paddingRight="15dip"
+        android:paddingLeft="15dip"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/qm_btn_roleaccess_edit"/>
+</RelativeLayout>

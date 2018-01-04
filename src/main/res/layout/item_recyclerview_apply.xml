@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relateSortView"
+    android:layout_width="match_parent"
+    android:layout_height="74dip"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:orientation="horizontal"
+        android:background="@drawable/qm_bg_item">
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/textGangNumber"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageGangIcon"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:layout_marginLeft="30dip"
+                android:scaleType="fitCenter"/>
+
+            <LinearLayout
+                android:layout_toRightOf="@id/imageGangIcon"
+                android:layout_alignTop="@id/imageGangIcon"
+                android:layout_marginTop="2dip"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textGangLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/xlapply_item_name_color"
+                    android:textSize="13sp"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textGangName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/xlapply_item_name_color"
+                    android:textSize="13sp"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/imageGangLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textGangDescribe"
+                android:layout_toRightOf="@+id/imageGangIcon"
+                android:layout_alignBottom="@+id/imageGangIcon"
+                android:layout_marginBottom="6dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/xlapply_item_describle_color"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:gravity="center_vertical"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="90dip"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnGangApplyCancel"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_marginRight="28dip"
+                android:text="取消申请"
+                android:textSize="@dimen/xl_apply_button_apply_cancel"
+                android:textColor="@color/xlapply_item_button_cancelapply_color"
+                android:background="@mipmap/qm_btn_apply_cancelapply" />
+
+            <LinearLayout
+                android:layout_above="@+id/btnGangApplyCancel"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="28dip"
+                android:layout_width="match_parent"
+                android:layout_height="16dip"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_gravity="bottom"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:src="@mipmap/qm_icon_member_num"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/textGangPeopleNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dip"
+                    android:textSize="12sp"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/xlapply_item_membernum_color"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="4dip" />
+</LinearLayout>

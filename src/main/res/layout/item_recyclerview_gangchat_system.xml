@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textMessageSystem"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="23dip"
+        android:layout_marginRight="23dip"
+        android:background="@drawable/qm_bg_gangchat_system_messages"
+        android:paddingLeft="11dip"
+        android:paddingRight="11dip"
+        android:paddingTop="7dip"
+        android:paddingBottom="7dip"
+        android:lineSpacingExtra="3dip"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:textColor="@color/xlgangchat_item_chat_system_message_color"
+        android:textSize="11sp" />
+</LinearLayout>

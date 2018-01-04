@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <com.xl.views.ptr.PtrClassicFrameLayout
+       android:id="@+id/ptrFrameLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:ptr_duration_to_close="200"
+       app:ptr_duration_to_close_header="1000"
+       app:ptr_keep_header_when_refresh="true"
+       app:ptr_pull_to_fresh="false"
+       app:ptr_ratio_of_header_height_to_refresh="1.2"
+       app:ptr_resistance="1.7">
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recyclerViewApply"
+          android:layout_marginTop="3dip"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:overScrollMode="never"
+          android:fadingEdge="none">
+      </android.support.v7.widget.RecyclerView>
+   </com.xl.views.ptr.PtrClassicFrameLayout>
+</RelativeLayout>

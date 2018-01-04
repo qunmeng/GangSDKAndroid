@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relateSortView"
+    android:layout_width="match_parent"
+    android:layout_height="74dip"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:background="@drawable/qm_bg_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textGangNumber"
+            android:layout_width="45dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dip"
+            android:background="@mipmap/qm_bg_ganglist_num"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="@color/xlganglist_item_position_color"
+            android:textSize="32sp" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dip"
+            android:layout_toRightOf="@+id/textGangNumber"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageGangIcon"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_alignTop="@id/imageGangIcon"
+                android:layout_marginTop="2dip"
+                android:layout_toRightOf="@id/imageGangIcon"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textGangLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center"
+                    android:textColor="@color/xlganglist_item_name_color"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textGangName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/xlganglist_item_name_color"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/imageGangLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textGangDescribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageGangIcon"
+                android:layout_marginBottom="6dip"
+                android:layout_toRightOf="@+id/imageGangIcon"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:textColor="@color/xlganglist_item_describle_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="90dip"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnGangApply"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="28dip"
+                android:background="@mipmap/qm_btn_ganglist_apply"
+                android:text="申请加入"
+                android:textColor="@color/xlganglist_item_button_apply_color"
+                android:textSize="@dimen/xl_ganglist_button_apply" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dip"
+                android:layout_above="@+id/btnGangApply"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="28dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:layout_gravity="bottom"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/qm_icon_member_num" />
+
+                <TextView
+                    android:id="@+id/textGangPeopleNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/xlganglist_item_membernum_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="4dip" />
+
+</LinearLayout>

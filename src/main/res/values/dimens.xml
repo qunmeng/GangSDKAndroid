@@ -1,0 +1,67 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="dp_066">0.66dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+
+    <dimen name="radius_large">120dp</dimen>
+    <dimen name="radius_small">30dp</dimen>
+    <dimen name="radius_medium">72dp</dimen>
+
+    <!-- font sizes -->
+    <dimen name="font_larger">22sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_normal">15sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+
+    <!-- typical spacing between two views -->
+    <dimen name="spacing_huge">40dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_normal">14dp</dimen>
+    <dimen name="spacing_small">10dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+
+    <!-- typical sizes of views -->
+    <dimen name="button_height_tall">60dp</dimen>
+    <dimen name="button_height_normal">40dp</dimen>
+    <dimen name="button_height_short">32dp</dimen>
+
+
+    <dimen name="loudspeakerheight">60dp</dimen>
+    <!--字体大小  start-->
+
+    <!--title bar-->
+    <dimen name="xl_main_title">25sp</dimen>
+    <!--tab-->
+    <dimen name="xl_tab_item">13sp</dimen>
+    <!--社群排行榜-->
+    <dimen name="xl_ganglist_button_apply">13sp</dimen>
+    <!--社群推荐-->
+    <dimen name="xl_recommend_button_apply">13sp</dimen>
+    <!--社群申请-->
+    <dimen name="xl_apply_button_apply_cancel">11sp</dimen>
+    <!--社群邀请-->
+    <dimen name="xl_invite_button_agree">15sp</dimen>
+    <dimen name="xl_invite_button_refuse">15sp</dimen>
+    <!--社群聊天-->
+    <dimen name="xl_gang_chat_tab_item">14sp</dimen>
+    <dimen name="xl_gang_chat_tips_hint">12sp</dimen>
+    <!--社群排行榜-->
+    <dimen name="xl_gangrank_item_declaration">11sp</dimen>
+    <!--字体颜色  end-->
+
+</resources>

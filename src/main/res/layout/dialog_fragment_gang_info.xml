@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dip"
+    android:layout_height="324dip"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="230dip"
+        android:layout_height="324dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="6dip"
+            android:layout_marginRight="6dip"
+            android:background="@mipmap/qm_bg_pop_ganginfo_out">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_gravity="center_horizontal"
+                android:text="信 息"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/xl_dialog_ganginfo_text_title_color"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/qm_bg_pop_ganginfo_in">
+
+                <RelativeLayout
+                    android:layout_marginTop="6dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@drawable/qm_bg_pop_ganginfo_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dip">
+
+                    <ImageView
+                        android:id="@+id/imageGangIcon"
+                        android:layout_width="45dip"
+                        android:layout_height="45dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/textGangName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/imageGangIcon"
+                        android:layout_toRightOf="@id/imageGangIcon"
+                        android:layout_marginTop="6dip"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textSize="12sp"
+                        android:textColor="@color/xl_dialog_ganginfo_text_name_color"/>
+
+                    <TextView
+                        android:id="@+id/textGangId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imageGangIcon"
+                        android:layout_toRightOf="@id/imageGangIcon"
+                        android:layout_marginBottom="6dip"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textSize="12sp"
+                        android:textColor="@color/xl_dialog_ganginfo_text_name_color"/>
+                </RelativeLayout>
+                
+                <Button
+                    android:id="@+id/btnApply"
+                    android:layout_width="92dip"
+                    android:layout_height="30dip"
+                    android:background="@mipmap/qm_btn_ganginfo_apply"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="17dip"
+                    android:layout_centerHorizontal="true"
+                    android:text="申请加入"
+                    android:textStyle="bold"
+                    android:textColor="@color/xl_dialog_ganginfo_button_apply_color"/>
+
+                <TextView
+                    android:id="@+id/textGangInfo"
+                    android:layout_above="@+id/btnApply"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="28dip"
+                    android:paddingRight="28dip"
+                    android:layout_marginTop="70dip"
+                    android:paddingBottom="10dip"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textSize="11sp"
+                   android:ellipsize="end"
+                    android:textColor="@color/xl_dialog_ganginfo_text_content_color"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textClose"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/qm_btn_pop_close"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>
+

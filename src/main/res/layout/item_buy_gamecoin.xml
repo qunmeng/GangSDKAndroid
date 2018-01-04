@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="97dip"
+    android:layout_height="155dip"
+    android:background="@mipmap/qm_bg_pay_center_item">
+
+    <LinearLayout
+        android:layout_width="77dip"
+        android:layout_height="143dip"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/qm_bg_pay_center_item_middle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dip"
+            android:background="@mipmap/qm_bg_pay_center_item_title">
+
+            <TextView
+                android:id="@+id/tvGameCoinName"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="888888"
+                android:textSize="14sp"
+                android:textColor="#0d7293"
+                android:maxLines="1"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="82dip">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivGameCoinPic"
+                    android:layout_centerInParent="true"
+                    android:layout_width="65dip"
+                    android:layout_height="65dip"
+                    android:src="@mipmap/ic_launcher"
+                    android:scaleType="fitCenter"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/qm_bg_pay_center_paynum">
+
+            <TextView
+                android:id="@+id/tvGameCoinPrice"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="888888"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:maxLines="1"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="229dip"
+    android:layout_height="246dip"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="229dip"
+        android:layout_height="246dip"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="223dip"
+            android:layout_height="240dip"
+            android:layout_marginTop="6dip"
+            android:background="@mipmap/qm_bg_pop_out">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:gravity="center"
+                android:text="昵称设置"
+                android:textStyle="bold"
+                android:textColor="@color/xl_dialog_update_nickname_text_title_color"
+                android:textSize="19sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvTitle"
+                android:background="@mipmap/qm_bg_pop_in">
+
+                <EditText
+                    android:id="@+id/etContent"
+                    android:layout_width="195dip"
+                    android:layout_height="44dip"
+                    android:layout_marginTop="30dip"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/qm_bg_pop_edit_nickname_content"
+                    android:hint="请输入昵称"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/xl_dialog_update_nickname_text_input_color"
+                    android:textColor="@color/xl_dialog_update_nickname_text_input_color"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:id="@+id/relativeBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginRight="18dip">
+
+                    <Button
+                        android:id="@+id/btnConfirm"
+                        android:layout_width="90dip"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:text="确认"
+                        android:textStyle="bold"
+                        android:textColor="@color/xl_dialog_button_confirm_color"
+                        android:background="@mipmap/qm_btn_pop_sure" />
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="90dip"
+                        android:layout_height="match_parent"
+                        android:text="取消"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/xl_dialog_button_confirm_color"                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/qm_btn_pop_cancel"  />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textClose"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/qm_btn_pop_close" />
+    </RelativeLayout>
+</RelativeLayout>

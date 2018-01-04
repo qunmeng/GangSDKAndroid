@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/qm_bg_main">
+
+    <include layout="@layout/common_titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/qm_bg_pay_center_bottom_frame">
+
+        <RelativeLayout
+            android:id="@+id/RlPayCenterBackgroud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/qm_bg_pay_center_frame">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:overScrollMode="never"
+                android:fadingEdge="none"
+                android:layout_marginLeft="18dip"
+                android:layout_marginRight="18dip"
+                android:layout_marginTop="2dip"
+                android:layout_marginBottom="2dip"
+                android:background="@android:color/transparent">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

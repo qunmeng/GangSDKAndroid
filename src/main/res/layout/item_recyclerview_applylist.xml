@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="74dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:background="@drawable/qm_bg_item">
+
+        <ImageView
+            android:id="@+id/imageUserPicture"
+            android:layout_width="50dip"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/textUserLevel"
+            android:layout_width="25dip"
+            android:layout_height="13dip"
+            android:background="@mipmap/qm_bg_gamelevel"
+            android:layout_marginLeft="28dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Lv.100"
+            android:textColor="@color/xlapplylist_item_text_nickname_color"
+            android:textSize="7sp" />
+
+        <LinearLayout
+            android:id="@+id/viewRight"
+            android:layout_width="105dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAgainst"
+                android:layout_width="50dip"
+                android:layout_height="28dip"
+                android:text="忽略"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/xlapplylist_item_button_refuse_color"
+                android:background="@mipmap/qm_btn_applylist_refuse"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="5dip"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnPass"
+                android:layout_width="50dip"
+                android:layout_height="28dip"
+                android:layout_alignParentRight="true"
+                android:text="通过"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/xlapplylist_item_button_pass_color"
+                android:background="@mipmap/qm_btn_applylist_pass"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/imageUserPicture"
+            android:layout_toLeftOf="@+id/viewRight"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/xlapplylist_item_text_nickname_color"/>
+
+            <TextView
+                android:id="@+id/textUserProfession"
+                android:layout_toRightOf="@+id/textUserName"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/xlapplylist_item_text_profession_color"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="4dip" />
+</LinearLayout>

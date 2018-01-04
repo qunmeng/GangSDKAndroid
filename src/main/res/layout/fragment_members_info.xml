@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/relativeTop"
+        layout="@layout/common_titlebar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@id/relativeTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never">
+
+    <LinearLayout
+        android:id="@+id/viewGangExist"
+        android:layout_marginTop="6dip"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:descendantFocusability="blocksDescendants">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/qm_bg_userinfo_top">
+
+            <RelativeLayout
+                android:id="@+id/viewTop"
+                android:layout_width="match_parent"
+                android:layout_height="80dip">
+
+                <ImageView
+                    android:id="@+id/ivHeader"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34dip"
+                    android:layout_marginRight="17dip"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/tvLevel"
+                    android:layout_width="25dip"
+                    android:layout_height="13dip"
+                    android:layout_marginLeft="32dip"
+                    android:layout_marginTop="13dip"
+                    android:background="@mipmap/qm_bg_gamelevel"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:textColor="@color/xlmemberinfo_text_lelvel_color"
+                    android:textSize="7sp" />
+
+                <TextView
+                    android:id="@+id/tvNickname"
+                    android:layout_width="106dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ivHeader"
+                    android:layout_marginTop="4dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:layout_toRightOf="@+id/ivHeader"
+                    android:textColor="@color/xlmemberinfo_text_nickname_color"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvMemberRole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tvNickname"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:layout_toRightOf="@+id/tvNickname"
+                    android:layout_toLeftOf="@+id/viewRightButton"
+                    android:textColor="@color/xlmemberinfo_text_prefession_color"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dip"
+                    android:layout_alignBottom="@+id/ivHeader"
+                    android:layout_marginBottom="4dip"
+                    android:layout_toLeftOf="@+id/viewRightButton"
+                    android:layout_toRightOf="@+id/ivHeader">
+
+                    <TextView
+                        android:id="@+id/tvGangName"
+                        android:layout_width="125dip"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/qm_bg_userinfo_gangname"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:textSize="13sp"
+                        android:textColor="@color/xlmemberinfo_text_gang_name_color"/>
+
+                    <TextView
+                        android:id="@+id/tvPosition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="17dip"
+                        android:layout_marginLeft="103dip"
+                        android:background="@drawable/qm_bg_role2"
+                        android:gravity="center"
+                        android:textColor="@color/xlmemberinfo_text_position_color"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/viewRightButton"
+                    android:layout_width="50dip"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnGangDynamic"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dip"
+                        android:layout_marginTop="14dip"
+                        android:background="@mipmap/qm_btn_userinfo_dynamic"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="动态"
+                        android:textColor="@color/xlmemberinfo_button_gang_circle_color"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="2dip" />
+
+                    <Button
+                        android:id="@+id/btnGangInfo"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dip"
+                        android:background="@mipmap/qm_btn_userinfo_details"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="详情"
+                        android:textColor="@color/xlmemberinfo_button_gang_info_color"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnInvite"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dip"
+                        android:background="@mipmap/qm_btn_userinfo_details"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="邀请"
+                        android:textColor="@color/xlmemberinfo_button_gang_info_color"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_below="@+id/viewTop"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@mipmap/qm_icon_userinfo_underline"/>
+
+            <LinearLayout
+                android:id="@+id/viewContribute"
+                android:layout_below="@+id/viewTop"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:orientation="horizontal"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip">
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dip"
+                    android:layout_height="20dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/qm_bg_userinfo_contribution" >
+
+                    <TextView
+                        android:id="@+id/tvContributeWeekNum"
+                        android:layout_weight="1"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textSize="12sp"
+                        android:textColor="@color/xlmemberinfo_text_value_color"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:gravity="center"/>
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/qm_icon_userinfo_contribution_underline"/>
+
+
+                    <TextView
+                        android:id="@+id/tvContributeAllNum"
+                        android:layout_weight="1"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textSize="12sp"
+                        android:textColor="@color/xlmemberinfo_text_value_color"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginRight="4dip"
+                    android:background="@mipmap/qm_icon_userinfo_active_underline"/>
+
+                <TextView
+                    android:id="@+id/tvActiveNum"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="20dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/qm_bg_userinfo_active"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:textColor="@color/xlmemberinfo_text_value_color"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewContributeUnderline"
+                android:layout_below="@+id/viewContribute"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@mipmap/qm_icon_userinfo_underline"/>
+
+            <LinearLayout
+                android:id="@+id/viewKickParent"
+                android:layout_below="@+id/viewContribute"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:orientation="horizontal"
+                android:paddingLeft="58dip"
+                android:paddingRight="58dip"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:layout_weight="230"
+                    android:id="@+id/btnKick"
+                    android:layout_width="0dip"
+                    android:layout_height="24dip"
+                    android:maxWidth="115dip"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/qm_btn_memberinfo_kick"
+                    android:textColor="@color/xlmemberinfo_button_kick_color" />
+
+                <android.support.v4.widget.Space
+                    android:layout_weight="54"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnChange"
+                    android:layout_weight="230"
+                    android:layout_width="0dip"
+                    android:layout_height="24dip"
+                    android:maxWidth="115dip"
+                    android:lines="1"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:textColor="@color/xlmemberinfo_button_kick_color"
+                    android:background="@drawable/qm_btn_memberinfo_kick"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewMute"
+            android:layout_marginTop="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dip"
+            android:background="@drawable/qm_bg_userinfo_middle">
+
+            <TextView
+                android:id="@+id/tvNoTalk"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:text="社群禁言"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/xlmemberinfo_text_title_color"
+                android:background="@drawable/qm_bg_userinfo_item_title"/>
+
+            <com.qm.gangsdk.ui.custom.radiogroup.FlowRadioGroup
+                android:id="@+id/radioGroupNotalk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.qm.gangsdk.ui.custom.radiogroup.FlowRadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewPosition"
+            android:layout_marginTop="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dip"
+            android:background="@drawable/qm_bg_userinfo_middle">
+
+            <TextView
+                android:id="@+id/tvChangePosition"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:text="更改职位"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/xlmemberinfo_text_title_color"
+                android:background="@drawable/qm_bg_userinfo_item_title"/>
+
+            <com.qm.gangsdk.ui.custom.radiogroup.FlowRadioGroup
+                android:id="@+id/radioGroupPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.qm.gangsdk.ui.custom.radiogroup.FlowRadioGroup>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/viewPlayingGame"
+            android:layout_marginTop="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:background="@drawable/qm_bg_userinfo_middle">
+
+            <TextView
+                android:id="@+id/tvPlayingGame"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:text="在玩游戏"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/xlmemberinfo_text_title_color"
+                android:background="@drawable/qm_bg_userinfo_item_title"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:minHeight="90dip"
+                android:paddingTop="13dip"
+                android:paddingBottom="3dip"
+                android:layout_below="@+id/tvPlayingGame"
+                android:overScrollMode="never"
+                android:fadingEdge="none">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

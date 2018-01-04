@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="229dip"
+        android:layout_height="278dip">
+
+        <RelativeLayout
+            android:layout_width="223dip"
+            android:layout_height="272dip"
+            android:layout_marginTop="6dip"
+            android:background="@mipmap/qm_bg_gangchat_watertree_big">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:text="树苗浇水"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/xlgangchat_dialog_water_tree_title_color"
+                android:textSize="19sp" />
+
+            <RelativeLayout
+                android:id="@+id/viewParent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_below="@+id/tvTitle"
+                android:background="@mipmap/qm_bg_gangchat_watertree">
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnWaterTree"
+                android:layout_width="80dip"
+                android:layout_height="35dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="13dip"
+                android:text="点击浇水"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/xlgangchat_dialog_water_tree_button_color"
+                android:background="@mipmap/qm_btn_gangchat_water"/>
+
+            <ImageView
+                android:id="@+id/imageTreeIcon"
+                android:layout_above="@+id/btnWaterTree"
+                android:layout_marginBottom="6dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textClose"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/qm_btn_gangchat_pop_close"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="229dip"
+        android:layout_height="278dip">
+
+        <RelativeLayout
+            android:layout_width="223dip"
+            android:layout_height="272dip"
+            android:layout_marginTop="6dip"
+            android:background="@mipmap/qm_bg_gangchat_attackmonster_big">
+
+            <View
+                android:layout_marginTop="45dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/qm_bg_gangchat_attackmonster" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:text="怪兽攻击"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/xlgangchat_dialog_attack_monster_title_color"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/btnMonsterAccident"
+                android:layout_width="80dip"
+                android:layout_height="35dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="13dip"
+                android:text="点击攻击"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/xlgangchat_dialog_attack_monster_button_color"
+                android:background="@mipmap/qm_btn_gangchat_tip_attack"/>
+
+            <LinearLayout
+                android:id="@+id/linearMonsterBlood"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:layout_marginTop="55dip"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:background="@drawable/qm_shape_task_monster_blood_red">
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageMonsterIcon"
+                android:layout_above="@+id/btnMonsterAccident"
+                android:layout_marginBottom="6dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside" />
+
+
+            <RelativeLayout
+                android:id="@+id/viewParent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_below="@+id/tvTitle">
+
+                <View
+                    android:id="@+id/endAnim"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginTop="20dip"
+                    android:layout_alignParentRight="true"/>
+
+
+                <View
+                    android:id="@+id/fromView"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginBottom="80dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textClose"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/qm_btn_gangchat_pop_close"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>

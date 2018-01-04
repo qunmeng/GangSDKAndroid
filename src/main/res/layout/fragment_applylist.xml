@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/commonTitle"
+        layout="@layout/common_titlebar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewApplyList"
+        android:layout_below="@id/commonTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dip"
+        android:overScrollMode="never"
+        android:fadingEdge="none">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

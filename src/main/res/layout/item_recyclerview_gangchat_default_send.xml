@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="63dip"
+    android:paddingRight="23dip">
+
+    <ImageView
+        android:id="@+id/imageUserPic"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imageUserPic"
+        android:layout_alignTop="@+id/imageUserPic"
+        android:orientation="vertical"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:background="@drawable/qm_bg_gangchat_right">
+
+        <LinearLayout
+            android:id="@+id/linearUserInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="22dip"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="20dip">
+
+            <ImageView
+                android:id="@+id/imageGangIcon"
+                android:layout_width="19dip"
+                android:layout_height="19dip"
+                android:layout_marginRight="5dip"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/textUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="22dip"
+                android:textColor="@color/xlgangchat_item_gang_name_color"
+                android:textSize="13sp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/linearUserInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="6dip"
+            android:paddingLeft="9dip"
+            android:paddingRight="20dip"
+            android:gravity="center_vertical"
+            android:text="请升级到最新版本来查看这条消息"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="11sp"
+            android:lineSpacingExtra="2dp" />
+    </LinearLayout>
+
+</RelativeLayout>

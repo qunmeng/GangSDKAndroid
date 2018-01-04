@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f000000"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="4dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dip"
+            android:textSize="18sp"
+            android:textColor="#999999"
+            android:text="选择图像"
+            android:background="@drawable/qm_shape_upload_image_circle_top_white"
+            android:gravity="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#888888"/>
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="match_parent"
+            android:layout_height="46dip"
+            android:background="@drawable/qm_selectorr_btn_upload_image_common"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="#52afe8"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#888888"/>
+        <Button
+            android:id="@+id/btnSDCard"
+            android:layout_width="match_parent"
+            android:layout_height="46dip"
+            android:background="@drawable/qm_selector_btn_upload_image_bottom"
+            android:gravity="center"
+            android:text="从相册选择"
+            android:textColor="#52afe8"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="43dip"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/qm_selectorr_btn_upload_image_cancel"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

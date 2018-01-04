@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="229dip"
+    android:layout_height="246dip"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="229dip"
+        android:layout_height="246dip"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="223dip"
+            android:layout_height="240dip"
+            android:layout_marginTop="6dip"
+            android:background="@mipmap/qm_bg_pop_out">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:gravity="center"
+                android:text="编辑公告"
+                android:textStyle="bold"
+                android:textColor="@color/xl_dialog_edit_tips_text_title_color"
+                android:textSize="19sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvTitle"
+                android:background="@mipmap/qm_bg_pop_in">
+
+                <EditText
+                    android:id="@+id/editGangContent"
+                    android:layout_width="195dip"
+                    android:layout_height="88dip"
+                    android:layout_marginTop="30dip"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/qm_bg_pop_edit_tips_content"
+                    android:hint="请输入内容"
+                    android:padding="14dip"
+                    android:gravity="left|top"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/xl_dialog_edit_tips_text_input_color"
+                    android:textColor="@color/xl_dialog_edit_tips_text_input_color" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginRight="18dip">
+
+                    <Button
+                        android:id="@+id/btnGangPublish"
+                        android:layout_width="90dip"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:text="确认"
+                        android:textStyle="bold"
+                        android:textColor="@color/xl_dialog_button_confirm_color"
+                        android:background="@mipmap/qm_btn_pop_sure" />
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="90dip"
+                        android:layout_height="match_parent"
+                        android:text="取消"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/xl_dialog_button_confirm_color"                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/qm_btn_pop_cancel"  />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textClose"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/qm_btn_pop_close" />
+    </RelativeLayout>
+</RelativeLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="220dip"-->
+    <!--android:layout_height="240dip">-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="220dip"-->
+        <!--android:layout_height="240dip">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@mipmap/qm_bg_dialog_common">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvTitle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_margin="3dp"-->
+                <!--android:text="提示"-->
+                <!--android:textColor="@color/xlgang_dialog_donate_tvtitle"-->
+                <!--android:textSize="20sp" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_below="@+id/tvTitle"-->
+                <!--android:layout_margin="2dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@mipmap/qm_bg_dialog_common_in">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/editGangContent"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="60dip"-->
+                    <!--android:layout_marginTop="50dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:background="@mipmap/qm_bg_dialog_input"-->
+                    <!--android:gravity="center"-->
+                    <!--android:hint="请输入内容"-->
+                    <!--android:maxLength="60"-->
+                    <!--android:textColorHint="@color/xlgang_dialog_content_edit"-->
+                    <!--android:textColor="@color/xlgang_dialog_content_edit"-->
+                    <!--android:textSize="16sp" />-->
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/relativeBottom"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginBottom="15dip"-->
+                    <!--android:layout_marginLeft="10dip"-->
+                    <!--android:layout_marginRight="10dip">-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btnGangPublish"-->
+                        <!--android:layout_width="76dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:text="确认"-->
+                        <!--android:textSize="16sp"-->
+                        <!--android:textColor="@color/xlmaingang_item_white"-->
+                        <!--android:background="@mipmap/qm_btn_confirm"  />-->
+
+                <!--</RelativeLayout>-->
+            <!--</RelativeLayout>-->
+        <!--</RelativeLayout>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textClose"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@mipmap/qm_btn_dialog_cancel_circle"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="20sp" />-->
+    <!--</RelativeLayout>-->
+<!--</RelativeLayout>-->

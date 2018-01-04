@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="xlcolorPrimary">#3F51B5</color>
+    <color name="xlcolorPrimaryDark">#303F9F</color>
+    <color name="xlcolorAccent">#000000</color>
+    <color name="xlwindowBG">#FFFFFF</color>
+    <color name="color_00">#8A000000</color>
+    <color name="color_B3">#B3000000</color>
+
+    <!--new start-->
+    <!--tab color-->
+    <color name="xlgang_text_tab_normal_color">#c1edfe</color>
+    <color name="xlgang_text_tab_selected_color">#72471d</color>
+    <color name="xlgang_titlebar_title_color">#56d0f7</color>
+    <color name="xl_dialog_button_confirm_color">#ffffff</color>
+
+    <!--创建社群-->
+    <color name="xlcreategang_title_name_color">#72471d</color>
+    <color name="xlcreategang_name_input_hint_color">#73b3d1</color>
+    <color name="xlcreategang_name_input_color">#ffffff</color>
+    <color name="xlcreategang_title_declaration_color">#72471d</color>
+    <color name="xlcreategang_declaration_input_hint_color">#73b3d1</color>
+    <color name="xlcreategang_declaration_input_color">#ffffff</color>
+    <color name="xlcreategang_create_rule_color">#28a6ed</color>
+
+    <!--社群排行榜（没有社群）-->
+    <color name="xlganglist_btn_search_color">#72471d</color>
+    <color name="xlganglist_eidt_input_hint_color">#906841</color>
+    <color name="xlganglist_eidt_input_color">#ffffff</color>
+    <color name="xlganglist_item_position_color">#0d7293</color>
+    <color name="xlganglist_item_membernum_color">#0d7293</color>
+    <color name="xlganglist_item_button_apply_color">#72471d</color>
+    <color name="xlganglist_item_name_color">#ffffff</color>
+    <color name="xlganglist_item_describle_color">#0d7293</color>
+
+    <!--聊天-->
+    <color name="xlgangchat_edit_input_color">#ffffff</color>
+    <color name="xlgangchat_button_press_on_color">#72471d</color>
+    <color name="xlgangchat_button_stop_talk_color">#ffffff</color>
+    <color name="xlgangchat_button_send_message_color">#72471d</color>
+    <color name="xlgangchat_item_gang_name_color">#ffffff</color>
+    <color name="xlgangchat_item_chat_left_text_color">#0d7293</color>
+    <color name="xlgangchat_item_chat_right_text_color">#0d7293</color>
+    <color name="xlgangchat_item_chat_left_second_text_color">#4bbde2</color>
+    <color name="xlgangchat_item_chat_right_second_text_color">#4bbde2</color>
+    <color name="xlgangchat_item_chat_voice_time_color">#2b8adb</color>
+    <color name="xlgangchat_item_chat_system_message_color">#ffffff</color>
+    <color name="xlgangchat_item_chat_response_color">#72471d</color>
+
+    <!--社群推荐-->
+    <color name="xlrecommend_item_membernum_color">#0d7293</color>
+    <color name="xlrecommend_item_button_apply_color">#72471d</color>
+    <color name="xlrecommend_item_name_color">#ffffff</color>
+    <color name="xlrecommend_item_describle_color">#0d7293</color>
+
+    <!--社群申请-->
+    <color name="xlapply_item_membernum_color">#0d7293</color>
+    <color name="xlapply_item_button_cancelapply_color">#72471d</color>
+    <color name="xlapply_item_name_color">#ffffff</color>
+    <color name="xlapply_item_describle_color">#0d7293</color>
+
+    <!--社群邀请-->
+    <color name="xlinvite_item_membernum_color">#0d7293</color>
+    <color name="xlinvite_item_button_agree_color">#ffffff</color>
+    <color name="xlinvite_item_button_refuse_color">#72471d</color>
+    <color name="xlinvite_item_name_color">#ffffff</color>
+    <color name="xlinvite_item_describle_color">#0d7293</color>
+
+    <!--社群聊天-->
+    <color name="xlgangchat_text_tab_selected_color">#72471d</color>
+    <color name="xlgangchat_text_tab_normal_color">#c1edfe</color>
+
+        <!--聊天界面选项弹窗-->
+        <color name="xlgangchat_pop_button_click_color">#666666</color>
+
+    <!--攻击怪兽任务-->
+    <color name="xlgangchat_dialog_attack_monster_title_color">#c9390d</color>
+    <color name="xlgangchat_dialog_attack_monster_button_color">#ffffff</color>
+    <color name="xlgangchat_dialog_attack_monster_blood_red">#ff0000</color>
+    <color name="xlgangchat_dialog_attack_monster_blood_bg">#ffc8a5</color>
+
+    <!--浇水任务-->
+    <color name="xlgangchat_dialog_water_tree_title_color">#24790c</color>
+    <color name="xlgangchat_dialog_water_tree_button_color">#ffffff</color>
+
+    <!--公告-->
+    <color name="xlgangchat_pop_button_color">#ffffff</color>
+    <color name="xlgangchat_tips_text_color">#311e09</color>
+    <color name="xlgangchat_tips_text_hint_color">#d02f0a</color>
+    <color name="xlgangchat_task_text_color">#666666</color>
+    <color name="xlgangchat_task_text_hint_color">#d02f0a</color>
+    <color name="xlgangchat_task_attack_color">#ffffff</color>
+
+    <!--社群信息-->
+    <color name="xlganginfo_title_color">#d27706</color>
+    <color name="xlganginfo_text_color">#095770</color>
+    <color name="xlganginfo_button_donate_color">#72471d</color>
+
+        <!--捐献弹窗-->
+        <color name="xlganginfo_dialog_donate_title_color">#ea9601</color>
+        <color name="xlganginfo_dialog_donate_text_input_color">#dfae7a</color>
+        <color name="xlganginfo_dialog_donate_text_hint_color">#ffffff</color>
+
+    <!--成员-->
+    <color name="xlgangmembers_button_check_sort_color">#a46d33</color>
+    <color name="xlgangmembers_text_online_num_color">#ffffff</color>
+    <color name="xlgangmembers_btn_search_color">#72471d</color>
+    <color name="xlgangmembers_eidt_input_hint_color">#906841</color>
+    <color name="xlgangmembers_eidt_input_color">#ffffff</color>
+    <color name="xlgangmembers_item_text_name_color">#ffffff</color>
+    <color name="xlgangmembers_item_text_me_color">#0075ab</color>
+    <color name="xlgangmembers_item_text_mute_color">#ff520a</color>
+    <color name="xlgangmembers_item_text_profession_color">#0d7293</color>
+    <color name="xlgangmembers_item_text_contribution_color">#0d7293</color>
+    <color name="xlgangmembers_item_text_online_color">#0075ab</color>
+    <color name="xlgangmembers_item_text_position_color">#ffffff</color>
+    <color name="xlgangmembers_item_text_lelvel_color">#ffffff</color>
+    <color name="xlgangmembers_item_button_exitgang_color">#ffffff</color>
+
+        <!--添加成员弹窗-->
+        <color name="xlgangmembers_dialog_addmembers_title_color">#ea9601</color>
+        <color name="xlgangmembers_dialog_addmembers_text_input_color">#dfae7a</color>
+        <color name="xlgangmembers_dialog_addmembers_text_hint_color">#ffffff</color>
+
+        <!--退出社群弹窗-->
+        <color name="xlgangmembers_dialog_exitgang_title_color">#c12900</color>
+        <color name="xlgangmembers_dialog_exitgang_text_input_color">#dfae7a</color>
+        <color name="xlgangmembers_dialog_exitgang_text_hint_color">#ffffff</color>
+
+
+    <!--禁言室-->
+    <color name="xlgangmember_mute_item_text_name_color">#ffffff</color>
+    <color name="xlgangmember_mute_item_text_position_color">#ffffff</color>
+    <color name="xlgangmember_mute_item_text_me_color">#0075ab</color>
+    <color name="xlgangmember_mute_item_text_lelvel_color">#ffffff</color>
+    <color name="xlgangmember_mute_item_text_profession_color">#0d7293</color>
+    <color name="xlgangmember_mute_item_text_time_color">#0d7293</color>
+    <color name="xlgangmember_mute_item_button_cancel_color">#72471d</color>
+
+    <!--成员活跃榜-->
+    <color name="xlgangmember_active_item_text_number_color">#0075ab</color>
+    <color name="xlgangmember_active_item_text_lelvel_color">#ffffff</color>
+    <color name="xlgangmember_active_item_text_name_color">#ffffff</color>
+    <color name="xlgangmember_active_item_text_profession_color">#0d7293</color>
+    <color name="xlgangmember_active_item_text_position_color">#ffffff</color>
+    <color name="xlgangmember_active_item_text_active_color">#0d7293</color>
+    <color name="xlgangmember_active_item_text_value_color">#0d7293</color>
+
+    <!--成员贡献榜-->
+    <color name="xlgangmember_donate_item_text_number_color">#0075ab</color>
+    <color name="xlgangmember_donate_item_text_lelvel_color">#ffffff</color>
+    <color name="xlgangmember_donate_item_text_name_color">#ffffff</color>
+    <color name="xlgangmember_donate_item_text_profession_color">#0d7293</color>
+    <color name="xlgangmember_donate_item_text_position_color">#ffffff</color>
+    <color name="xlgangmember_donate_item_text_active_color">#0d7293</color>
+    <color name="xlgangmember_donate_item_text_value_color">#0d7293</color>
+
+    <!--成员信息-->
+    <color name="xlmemberinfo_text_lelvel_color">#ffffff</color>
+    <color name="xlmemberinfo_text_nickname_color">#0d80c9</color>
+    <color name="xlmemberinfo_text_prefession_color">#0d80c9</color>
+    <color name="xlmemberinfo_text_position_color">#ffffff</color>
+    <color name="xlmemberinfo_button_kick_color">#ffffff</color>
+    <color name="xlmemberinfo_text_value_color">#0d80c9</color>
+    <color name="xlmemberinfo_text_title_color">#d27706</color>
+    <color name="xlmemberinfo_button_selected_color">#ffffff</color>
+    <color name="xlmemberinfo_button_normal_color">#ffffff</color>
+    <color name="xlmemberinfo_text_gang_name_color">#0967a3</color>
+    <color name="xlmemberinfo_button_gang_circle_color">#72471d</color>
+    <color name="xlmemberinfo_button_gang_info_color">#ffffff</color>
+
+        <!--成员信息弹窗-->
+        <color name="xlmemberinfo_dialog_text_title_color">#c12900</color>
+        <color name="xlmemberinfo_dialog_text_nickname_color">#0d80c9</color>
+        <color name="xlmemberinfo_dialog_text_content_color">#ffffff</color>
+        <color name="xlmemberinfo_dialog_text_time_color">#c72d04</color>
+        <color name="xlmemberinfo_dialog_text_gold_color">#c72d04</color>
+
+    <!--社群管理-->
+    <color name="xlmanager_text_name_color">#0d80c9</color>
+    <color name="xlmanager_button_applylist_color">#a46d33</color>
+    <color name="xlmanager_button_change_color">#72471d</color>
+    <color name="xlmanager_text_title_color">#d27706</color>
+    <color name="xlmanager_text_content_color">#0d80c9</color>
+    <color name="xlmanager_button_edit_color">#ffffff</color>
+    <color name="xlmanager_text_approve_color">#2086cc</color>
+    <color name="xlmanager_button_dissolve_color">#ffffff</color>
+
+        <!--社群升级-->
+        <color name="xlmanager_dialog_improvelevel_text_title_color">#ea9601</color>
+        <color name="xlmanager_dialog_improvelevel_text_content_color">#dfae7a</color>
+        <color name="xlmanager_dialog_improvelevel_text_level_color">#00fcff</color>
+        <color name="xlmanager_dialog_improvelevel_text_number_color">#00fcff</color>
+        <color name="xlmanager_dialog_improvelevel_text_hint_color">#ffffff</color>
+        <color name="xlmanager_dialog_improvelevel_text_gold_color">#c72d04</color>
+
+        <!--社群改名-->
+        <color name="xlmanager_dialog_edit_gangname_text_title_color">#ea9601</color>
+        <color name="xlmanager_dialog_edit_gangname_text_input_color">#dfae7a</color>
+        <color name="xlmanager_dialog_edit_gangname_text_hint_color">#ffffff</color>
+        <color name="xlmanager_dialog_edit_gangname_text_gold_color">#c72d04</color>>
+
+        <!--解散社群-->
+        <color name="xlmanager_dialog_dissolve_text_title_color">#c12900</color>
+        <color name="xlmanager_dialog_dissolve_text_content_color">#dfae7a</color>
+        <color name="xlmanager_dialog_dissolve_text_hint_color">#ffffff</color>
+
+        <!--更改社群图标-->
+        <color name="xlmanager_dialog_update_gangicon_text_title_color">#c12900</color>
+        <color name="xlmanager_dialog_update_gangicon_text_gold_color">#dc170d</color>
+        <color name="xlmanager_dialog_update_gangicon_text_content_color">#ffffff</color>
+
+        <!--编辑公告宣言-->
+        <color name="xl_dialog_edit_tips_text_title_color">#ea9601</color>
+        <color name="xl_dialog_edit_tips_text_input_color">#dfae7a</color>
+
+        <!--编辑公告宣言-->
+        <color name="xl_dialog_edit_declaration_text_title_color">#ea9601</color>
+        <color name="xl_dialog_edit_declaration_text_input_color">#dfae7a</color>
+
+    <!--成员申请列表-->
+    <color name="xlapplylist_item_text_level_color">#ffffff</color>
+    <color name="xlapplylist_item_text_nickname_color">#ffffff</color>
+    <color name="xlapplylist_item_text_profession_color">#0d7293</color>
+    <color name="xlapplylist_item_button_pass_color">#ffffff</color>
+    <color name="xlapplylist_item_button_refuse_color">#72471d</color>
+
+    <!--管理职位-->
+    <color name="xlroleaccess_text_title_color">#0d7293</color>
+    <color name="xlroleaccess_button_color">#ffffff</color>
+    <color name="xlroleaccess_item_role_text_normal_color">#0d7293</color>
+    <color name="xlroleaccess_item_role_text_selected_color">#ffffff</color>
+    <color name="xlroleaccess_item_access_text_color">#0d7293</color>
+
+        <!--修改职位昵称-->
+        <color name="xl_dialog_update_rolename_text_title_color">#ea9601</color>
+        <color name="xl_dialog_update_rolename_text_input_color">#dfae7a</color>
+
+    <!--任务-->
+    <color name="xlgangtask_item_text_title_color">#ffffff</color>
+    <color name="xlgangtask_item_text_name_color">#ffffff</color>
+    <color name="xlgangtask_item_text_describe_color">#0d7293</color>
+    <color name="xlgangtask_item_text_schedule_color">#0d7293</color>
+    <color name="xlgangtask_item_button_sign_color">#72471d</color>
+    <color name="xlgangtask_item_button_doing_color">#ffffff</color>
+    <color name="xlgangtask_item_button_finished_color">#2c3058</color>
+    <color name="xlgangtask_item_text_daily_color">#ffffff</color>
+    <color name="xlgangtask_item_text_week_color">#ffffff</color>
+
+    <!--社群排行榜-->
+    <color name="xlgangrank_item_text_name_color">#ffffff</color>
+    <color name="xlgangrank_item_text_declaration_color">#0d7293</color>
+    <color name="xlgangrank_item_text_number_color">#0d7293</color>
+    <color name="xlgangrank_item_text_type_color">#0075ab</color>
+    <color name="xlgangrank_item_text_value_color">#0d7293</color>
+
+    <!--修改昵称弹窗-->
+    <color name="xl_dialog_update_nickname_text_title_color">#ea9601</color>
+    <color name="xl_dialog_update_nickname_text_input_color">#dfae7a</color>
+
+    <!--社群信息-->
+    <color name="xl_dialog_ganginfo_text_title_color">#ea9601</color>
+    <color name="xl_dialog_ganginfo_text_name_color">#ffffff</color>
+    <color name="xl_dialog_ganginfo_text_content_color">#ffffff</color>
+    <color name="xl_dialog_ganginfo_button_apply_color">#72471d</color>
+
+    <!--上传图片-->
+    <color name="upload_image_grey">#cccccc</color>
+    <color name="upload_image_white">#ffffff</color>
+
+    <!--游戏中心-->
+    <color name="xlgamecenter_item_text_name_color">#ffffff</color>
+    <color name="xlgamecenter_item_text_des_color">#1b7d9e</color>
+    <color name="xlgamecenter_item_button_download_color">#72471d</color>
+    <color name="xlgamecenter_item_button_start_color">#ffffff</color>
+
+        <!--网络提示-->
+        <color name="xldialog_netstates_text_title_color">#c12900</color>
+        <color name="xldialog_netstates_text_content_color">#ffffff</color>
+
+    <!--个人中心-->
+    <color name="xlusercenter_text_level_color">#ffffff</color>
+    <color name="xlusercenter_text_nickname_color">#0967a3</color>
+    <color name="xlusercenter_text_profession_color">#0967a3</color>
+    <color name="xlusercenter_text_gang_name_color">#0967a3</color>
+    <color name="xlusercenter_text_position_color">#ffffff</color>
+    <color name="xlusercenter_text_value_color">#0d80c9</color>
+    <color name="xlusercenter_button_gang_circle_color">#72471d</color>
+    <color name="xlusercenter_button_gang_info_color">#ffffff</color>
+    <color name="xlusercenter_item_game_name_color">#292929</color>
+    <color name="xlusercenter_title_money_color">#209eee</color>
+
+        <!--在玩游戏弹窗-->
+        <color name="xldialog_download_start_text_title_color">#ea9601</color>
+        <color name="xldialog_download_start_text_content_color">#ffffff</color>
+        <color name="xldialog_download_start_button_download_color">#ffffff</color>
+        <color name="xldialog_download_start_button_start_color">#ffffff</color>
+
+    <!--消息中心-页面-->
+    <color name="xlmessagecenter_item_invite_gang_level_color">#ffffff</color>
+    <color name="xlmessagecenter_item_invite_gang_name_color">#ffffff</color>
+    <color name="xlmessagecenter_item_invite_gang_people_number_color">#0d7293</color>
+    <color name="xlmessagecenter_item_invite_gang_describe_color">#0d7293</color>
+    <color name="xlmessagecenter_item_invite_refuse_color">#72471d</color>
+    <color name="xlmessagecenter_item_invite_join_color">#ffffff</color>
+    <color name="xlmessagecenter_item_common_unread_title_color">#ffffff</color>
+    <color name="xlmessagecenter_item_common_unread_content_color">#0d7293</color>
+    <color name="xlmessagecenter_item_common_unread_datetime_color">#0d7293</color>
+    <color name="xlmessagecenter_item_common_read_title_color">#8e8e8e</color>
+    <color name="xlmessagecenter_item_common_read_content_color">#8e8e8e</color>
+    <color name="xlmessagecenter_item_common_read_datetime_color">#8e8e8e</color>
+    <color name="xlmessagecenter_item_common_delete_color">#ffffff</color>
+    <color name="xlmessagecenter_item_common_detail_color">#ffffff</color>
+
+        <!--消息中心-消息通知弹窗-->
+        <color name="xlmessagecenter_dialog_message_content_color">#dfae7a</color>
+        <color name="xlmessagecenter_dialog_message_datetime_color">#dfae7a</color>
+        <color name="xlmessagecenter_dialog_message_ignore_color">#ffffff</color>
+
+    <!--私聊频道-->
+    <color name="xlchatsingle_item_nickname_color">#ffffff</color>
+    <color name="xlchatsingle_item_common_text_color">#0075ab</color>
+    <!--new end-->
+</resources>

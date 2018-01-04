@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:paddingLeft="13dip"
+    android:paddingRight="13dip"
+    android:background="@drawable/qm_bg_titlebar">
+
+    <ImageButton
+        android:id="@+id/btnMenuLeft"
+        android:layout_width="44dip"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:src="@mipmap/qm_btn_back"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/xlgang_titlebar_title_color"
+        android:textSize="@dimen/xl_main_title"
+        android:layout_centerInParent="true"  />
+
+    <ImageButton
+        android:id="@+id/btnMenuRight"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_width="44dip"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:scaleType="fitCenter"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <include
+            android:id="@+id/viewMainCenter"
+            android:visibility="gone"
+            layout="@layout/titlebar_right_main_center" />
+
+        <include android:id="@+id/viewMoneyCenter"
+            android:visibility="gone"
+            layout="@layout/titlebar_right_menoy_center" />
+    </RelativeLayout>
+
+</RelativeLayout>

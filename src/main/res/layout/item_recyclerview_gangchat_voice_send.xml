@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="63dip"
+    android:paddingRight="23dip">
+
+    <ImageView
+        android:id="@+id/imageSendVoiceUserPic"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imageSendVoiceUserPic"
+        android:layout_alignTop="@+id/imageSendVoiceUserPic"
+        android:orientation="vertical"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:background="@drawable/qm_bg_gangchat_right">
+
+        <LinearLayout
+            android:id="@+id/linearSendUserInfo"
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_height="22dip"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="20dip">
+
+            <ImageView
+                android:id="@+id/imageGangIcon"
+                android:layout_width="19dip"
+                android:layout_height="19dip"
+                android:layout_marginRight="5dip"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/textSendVoiceUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="22dip"
+                android:textColor="@color/xlgangchat_item_gang_name_color"
+                android:textSize="13sp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/linearFromUserInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dip"
+            android:paddingBottom="10dip"
+            android:paddingLeft="9dip"
+            android:paddingRight="20dip"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textSendVoiceTime"
+                android:layout_width="wrap_content"
+                android:layout_height="20dip"
+                android:paddingRight="5dip"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/xlgangchat_item_chat_voice_time_color"/>
+
+            <LinearLayout
+                android:id="@+id/linearSendVoice"
+                android:layout_width="100dip"
+                android:layout_height="20dip"
+                android:background="@drawable/qm_record_bg_voice_play"
+                android:padding="3dip"
+                android:gravity="right">
+
+                <View
+                    android:id="@+id/imageSendVoice"
+                    android:layout_width="15dip"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/qm_record_volume_right3"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/qm_bg_main">
+
+    <include layout="@layout/common_titlebar" />
+
+    <LinearLayout
+        android:layout_marginTop="50dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dip">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32dip"
+                android:background="@drawable/qm_bg_tab"/>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayoutXL"
+                android:layout_width="match_parent"
+                android:layout_height="32dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:overScrollMode="never"
+                app:tabMode="scrollable"
+                app:tabPaddingStart="0dp"
+                app:tabPaddingEnd="0dp"
+                app:tabBackground="@drawable/qm_selector_gang_main_tab_bg"
+                app:tabIndicatorHeight="0dip" >
+            </android.support.design.widget.TabLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/qm_image_tab_underline" />
+        </RelativeLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerXL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never">
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="113dip"
+        android:orientation="vertical"
+        android:layout_width="54dip"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnGangCircle"
+            android:visibility="gone"
+            android:layout_marginBottom="1dip"
+            android:layout_width="match_parent"
+            android:layout_height="54dip"
+            android:background="@null"
+            android:src="@mipmap/qm_btn_gang_circle"
+            android:scaleType="centerCrop"/>
+
+        <ImageButton
+            android:id="@+id/btnGangRank"
+            android:layout_width="match_parent"
+            android:layout_height="54dip"
+            android:background="@null"
+            android:src="@mipmap/qm_btn_gang_rank"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+</RelativeLayout>

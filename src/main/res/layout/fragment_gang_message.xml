@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/viewParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/viewNotifyAnnouncement"
+            android:layout_width="match_parent"
+            android:layout_height="38dip"
+            android:background="@drawable/qm_bg_gangchat_tips"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvAnnouncement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3dip"
+                android:paddingBottom="6dip"
+                android:paddingLeft="35dip"
+                android:paddingRight="35dip"
+                android:paddingTop="5dip"
+                android:textColor="@color/xlgangchat_tips_text_color"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewAccidentTask"
+            android:visibility="gone"
+            android:layout_marginTop="4dip"
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:fadingEdge="none"
+            android:overScrollMode="never" >
+        </android.support.v7.widget.RecyclerView>
+
+        <com.xl.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/ptrFrameLayout"
+            android:paddingTop="6dip"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            app:ptr_duration_to_close="200"
+            app:ptr_duration_to_close_header="1000"
+            app:ptr_keep_header_when_refresh="true"
+            app:ptr_pull_to_fresh="false"
+            app:ptr_ratio_of_header_height_to_refresh="1.2"
+            app:ptr_resistance="1.7">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:fadingEdge="none"
+                android:scrollbars="vertical">
+            </android.support.v7.widget.RecyclerView>
+
+        </com.xl.views.ptr.PtrClassicFrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linearBottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dip"
+            android:background="@drawable/qm_bg_gangchat_bottom"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dip"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageSwitchVoice"
+                    android:layout_width="37dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginRight="10dip"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/qm_btn_gangchat_voice" />
+
+                <EditText
+                    android:id="@+id/editContent"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/qm_bg_gangchat_text_input"
+                    android:hint="想说点什么"
+                    android:padding="5dip"
+                    android:textColor="@color/xlgangchat_edit_input_color"
+                    android:textColorHint="@color/xlgangchat_edit_input_color"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+
+                <com.qm.gangsdk.ui.custom.button.XLAudioRecordButton
+                    android:id="@+id/btnAudioRecord"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="按住 说话"
+                    android:background="@drawable/qm_btn_gangchat_press_on"
+                    android:textSize="13sp"
+                    android:textColor="@color/xlgangchat_button_press_on_color"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btnCommit"
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/qm_btn_gangchat_sendmessage"
+                    android:text="发送"
+                    android:layout_marginLeft="10dip"
+                    android:textColor="@color/xlgangchat_button_send_message_color"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btnOther"
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="18dip"
+                    android:layout_marginLeft="7dip"
+                    android:background="@mipmap/qm_btn_gangchat_more_action" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewOtherSetting"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="57dip"
+        android:layout_marginRight="12dip"
+        android:orientation="vertical"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+        android:paddingBottom="15dip"
+        android:background="@drawable/qm_bg_pop_more_action">
+
+        <Button
+            android:id="@+id/btnContribute"
+            android:layout_width="match_parent"
+            android:layout_height="23dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@mipmap/qm_btn_gangchat_pop_more_action"
+            android:text="捐献"
+            android:textSize="10sp"
+            android:textColor="@color/xlgangchat_pop_button_color"/>
+
+        <View
+            android:id="@+id/viewPopUnderline"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@mipmap/qm_image_gangchat_pop_line"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dip"/>
+
+        <Button
+            android:id="@+id/btnConvene"
+            android:layout_width="match_parent"
+            android:layout_height="23dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@mipmap/qm_btn_gangchat_pop_more_action"
+            android:text="召集令"
+            android:textSize="10sp"
+            android:textColor="@color/xlgangchat_pop_button_color"/>
+    </LinearLayout>
+</RelativeLayout>

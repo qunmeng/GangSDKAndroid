@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/viewAccessNull"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/qm_bg_roleaccess_big">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="您没有此权限"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/xlroleaccess_text_title_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/qm_bg_roleaccess_big">
+
+        <ScrollView
+            android:id="@+id/viewScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <LinearLayout
+                    android:id="@+id/viewAceessList"
+                    android:layout_width="match_parent"
+                    android:layout_height="430dip"
+                    android:layout_marginLeft="17dip"
+                    android:layout_marginRight="17dip"
+                    android:background="@drawable/qm_bg_roleaccess_small"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="340dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_marginLeft="7dip"
+                        android:layout_marginRight="7dip"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_weight="290"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@drawable/qm_bg_roleaccess_role">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dip"
+                                android:text="职位列表"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textColor="@color/xlroleaccess_text_title_color"/>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerViewRole"
+                                android:paddingTop="5dip"
+                                android:paddingBottom="5dip"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:overScrollMode="never"
+                                android:fadingEdge="none">
+                            </android.support.v7.widget.RecyclerView>
+
+                        </LinearLayout>
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="6dip"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:layout_weight="370"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@drawable/qm_bg_roleaccess_role">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dip"
+                                android:text="权限列表"
+                                android:textSize="15sp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="@color/xlroleaccess_text_title_color"/>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerViewAccess"
+                                android:paddingTop="5dip"
+                                android:paddingBottom="5dip"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:overScrollMode="never"
+                                android:fadingEdge="none">
+                            </android.support.v7.widget.RecyclerView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="40dip"
+                        android:paddingRight="40dip">
+
+                        <Button
+                            android:id="@+id/btnProfessionSetSave"
+                            android:layout_weight="220"
+                            android:layout_width="0dip"
+                            android:layout_height="38dip"
+                            android:maxWidth="110dip"
+                            android:background="@drawable/qm_btn_roleaccess_save"
+                            android:text="保存"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/xlroleaccess_button_color"
+                            android:visibility="gone"/>
+
+                        <android.support.v4.widget.Space
+                            android:layout_weight="82"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:id="@+id/btnProfessionSetCancel"
+                            android:layout_weight="220"
+                            android:layout_width="0dip"
+                            android:layout_height="38dip"
+                            android:maxWidth="110dip"
+                            android:background="@drawable/qm_btn_roleaccess_cancel"
+                            android:text="取消"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textColor="@color/xlroleaccess_button_color"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

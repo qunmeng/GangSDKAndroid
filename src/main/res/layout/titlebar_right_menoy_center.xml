@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/viewMoneyPay"
+        android:layout_marginRight="5dip"
+        android:layout_centerVertical="true"
+        android:layout_width="95dip"
+        android:layout_height="20dip"
+        android:gravity="center_vertical"
+        android:background="@mipmap/qm_bg_user_center_recharge">
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:background="@mipmap/qm_icon_user_center_gold"/>
+
+        <TextView
+            android:id="@+id/textMoneyNum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="20dip"
+            android:paddingLeft="20dip"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="10sp"
+            android:ellipsize="end"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:background="@null"
+            android:src="@mipmap/qm_btn_user_center_buy"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

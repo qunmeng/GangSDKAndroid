@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewAll"
+    android:layout_width="match_parent"
+    android:layout_height="74dip"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:background="@drawable/qm_bg_item">
+
+        <RelativeLayout
+            android:id="@+id/viewPosition"
+            android:layout_width="42dip"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="4dip"
+            android:background="@mipmap/qm_bg_memberrank_sort">
+
+            <ImageView
+                android:id="@+id/ivNumPosition"
+                android:layout_width="42dip"
+                android:layout_height="42dip"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/ivHeader"
+            android:layout_width="50dip"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="14dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/viewPosition"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tvLevel"
+            android:layout_width="25dip"
+            android:layout_height="13dip"
+            android:layout_marginTop="8dip"
+            android:layout_toRightOf="@+id/viewPosition"
+            android:background="@mipmap/qm_bg_gamelevel"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="@color/xlgangmember_donate_item_text_lelvel_color"
+            android:textSize="7sp" />
+
+        <LinearLayout
+            android:id="@+id/linearTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivHeader"
+            android:layout_marginTop="4dip"
+            android:layout_toRightOf="@+id/ivHeader"
+            android:layout_toLeftOf="@id/relativeRight"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNickname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/xlgangmember_donate_item_text_name_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dip"
+                android:gravity="center"
+                android:textColor="@color/xlgangmember_donate_item_text_profession_color"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPosition"
+            android:layout_marginBottom="4dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivHeader"
+            android:layout_toRightOf="@+id/ivHeader"
+            android:background="@drawable/qm_bg_role2"
+            android:gravity="center"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/xlgangmember_donate_item_text_position_color"
+            android:textSize="10sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeRight"
+            android:layout_width="75dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dip">
+
+            <TextView
+                android:id="@+id/tvTitleName"
+                android:layout_marginTop="14dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="贡献值"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@color/xlgangmember_donate_item_text_active_color"/>
+
+            <TextView
+                android:id="@+id/tvNums"
+                android:layout_width="match_parent"
+                android:layout_height="21dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="14dip"
+                android:background="@mipmap/qm_bg_memberrank_num"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/xlgangmember_donate_item_text_value_color"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="4dip" />
+</LinearLayout>

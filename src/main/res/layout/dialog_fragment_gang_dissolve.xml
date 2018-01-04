@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="229dip"
+        android:layout_height="246dip">
+
+        <RelativeLayout
+            android:layout_width="223dip"
+            android:layout_height="240dip"
+            android:layout_marginTop="6dip"
+            android:layout_marginRight="6dip"
+            android:background="@mipmap/qm_bg_pop_out_tips">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:text="提 示"
+                android:textStyle="bold"
+                android:textColor="@color/xlmanager_dialog_dissolve_text_title_color"
+                android:textSize="19sp" />
+
+            <RelativeLayout
+                android:layout_marginTop="45dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/qm_bg_pop_in_tips">
+
+                <TextView
+                    android:id="@+id/textGangName"
+                    android:layout_width="195dip"
+                    android:layout_height="44dip"
+                    android:layout_marginTop="30dip"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/qm_bg_pop_gang_dissolve_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/xlmanager_dialog_dissolve_text_content_color"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textGangDissolveMessage"
+                    android:layout_below="@+id/textGangName"
+                    android:layout_above="@+id/relativeBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:paddingTop="12dip"
+                    android:paddingBottom="12dip"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/xlmanager_dialog_dissolve_text_hint_color" />
+
+                <LinearLayout
+                    android:id="@+id/relativeBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginRight="18dip"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnConfirm"
+                        android:layout_width="90dip"
+                        android:layout_height="match_parent"
+                        android:text="确认"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/xl_dialog_button_confirm_color"
+                        android:background="@mipmap/qm_btn_pop_sure_tips" />
+
+                    <android.support.v4.widget.Space
+                        android:layout_weight="1"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="90dip"
+                        android:layout_height="match_parent"
+                        android:text="取消"
+                        android:textStyle="bold"
+                        android:textColor="@color/xl_dialog_button_confirm_color"                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/qm_btn_pop_cancel_tips" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textClose"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/qm_btn_pop_close_tips"
+            android:gravity="center" />
+    </RelativeLayout>
+</RelativeLayout>
+
+

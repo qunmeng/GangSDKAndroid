@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/qm_bg_manager_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="26dip"
+            android:layout_marginRight="26dip"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnGangApply"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="申请列表"
+                android:textSize="12sp"
+                android:background="@drawable/qm_btn_manager_position_manager"
+                android:textColor="@color/xlmanager_button_applylist_color" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="10dip"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnGangManageProfession"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="职位管理"
+                android:textSize="12sp"
+                android:background="@drawable/qm_btn_manager_position_manager"
+                android:textColor="@color/xlmanager_button_applylist_color"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:layout_marginTop="14dip"
+                android:gravity="center_vertical"
+                android:background="@drawable/qm_bg_manager_items"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageGangIcon"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="15dip"
+                    android:scaleType="centerInside" />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dip"
+                    android:layout_marginBottom="20dip">
+
+                    <TextView
+                        android:id="@+id/textGangName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textSize="15sp"
+                        android:textColor="@color/xlmanager_text_name_color"/>
+
+                    <android.support.v4.widget.Space
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip" />
+
+                    <TextView
+                        android:id="@+id/textGangLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textSize="15sp"
+                        android:textColor="@color/xlmanager_text_name_color"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dip"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginRight="35dip"
+                    android:paddingTop="12dip"
+                    android:paddingBottom="12dip">
+
+                    <Button
+                        android:id="@+id/btnGangUpdateName"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dip"
+                        android:text="改名"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/xlmanager_button_change_color"
+                        android:background="@mipmap/qm_btn_manager_edit_gangname"/>
+
+                    <android.support.v4.widget.Space
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip" />
+
+                    <Button
+                        android:id="@+id/btnGangImproveLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dip"
+                        android:text="升级"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/xlmanager_button_change_color"
+                        android:background="@mipmap/qm_btn_manager_edit_gangname"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:text="公告"
+                android:textSize="15sp"
+                android:textColor="@color/xlmanager_text_title_color"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/qm_bg_manager_title"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/qm_bg_manager_items" >
+
+                <TextView
+                    android:id="@+id/textGangAnnouncements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textColor="@color/xlmanager_text_content_color"
+                    android:textSize="11sp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:layout_marginLeft="40dip"
+                    android:layout_marginRight="40dip"
+                    android:paddingTop="13dip"
+                    android:paddingBottom="45dip"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_alignParentBottom="true">
+
+                    <Button
+                        android:id="@+id/btnGangEditAnnouncements"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="35dip"
+                        android:layout_width="50dip"
+                        android:layout_height="25dip"
+                        android:text="编辑"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/xlmanager_button_edit_color"
+                        android:background="@mipmap/qm_btn_manager_edit_gangtip"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:text="宣言"
+                android:textSize="15sp"
+                android:textColor="@color/xlmanager_text_title_color"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/qm_bg_manager_title"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/qm_bg_manager_items" >
+
+                <TextView
+                    android:id="@+id/textGangDeclaration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                   android:textColor="@color/xlmanager_text_content_color"
+                    android:textSize="11sp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:layout_marginLeft="40dip"
+                    android:layout_marginRight="40dip"
+                    android:paddingTop="13dip"
+                    android:paddingBottom="45dip"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_alignParentBottom="true">
+
+                    <Button
+                        android:id="@+id/btnGangEditDeclaration"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="35dip"
+                        android:layout_width="50dip"
+                        android:layout_height="25dip"
+                        android:text="编辑"
+                        android:textColor="@color/xlmanager_button_edit_color"
+                        android:background="@mipmap/qm_btn_manager_edit_gangtip"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/qm_bg_manager_items">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="入会审批"
+                    android:paddingLeft="40dip"
+                    android:textColor="@color/xlmanager_text_approve_color"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"/>
+
+                <Button
+                    android:id="@+id/btnGangJoinSwitch"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="50dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="35dip"
+                    android:background="@mipmap/qm_btn_manager_close_approve" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="40dip"
+                android:layout_marginRight="35dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnGangDissolve"
+                    android:layout_width="60dip"
+                    android:layout_height="28dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/qm_btn_manager_dissolve"
+                    android:textSize="12sp"
+                    android:textColor="@color/xlmanager_button_dissolve_color"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

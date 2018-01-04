@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="229dip"
+    android:layout_height="246dip"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="229dip"
+        android:layout_height="246dip"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="223dip"
+            android:layout_height="240dip"
+            android:layout_marginTop="6dip"
+            android:background="@mipmap/qm_bg_pop_out">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:gravity="center"
+                android:text="通 知"
+                android:textStyle="bold"
+                android:textColor="@color/xlganginfo_dialog_donate_title_color"
+                android:textSize="19sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvTitle"
+                android:background="@mipmap/qm_bg_pop_in">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="121dip"
+                    android:layout_marginTop="8dip"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginRight="18dip"
+                    android:paddingTop="12dip"
+                    android:paddingBottom="7dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:background="@drawable/qm_bg_pop_edit_tips_content">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="7dip"
+                        android:paddingRight="7dip"
+                        android:scrollbarStyle="outsideOverlay">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textViewContent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888"
+                                android:textSize="14sp"
+                                android:textColor="@color/xlmessagecenter_dialog_message_content_color" />
+
+                            <TextView
+                                android:id="@+id/textViewFrom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textViewContent"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="20dip"
+                                android:text="官方团队"
+                                android:textSize="14sp"
+                                android:textColor="@color/xlmessagecenter_dialog_message_datetime_color" />
+
+                            <TextView
+                                android:id="@+id/textViewDateTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textViewFrom"
+                                android:layout_alignParentRight="true"
+                                android:text="8888-88-88"
+                                android:textSize="14sp"
+                                android:textColor="@color/xlmessagecenter_dialog_message_datetime_color" />
+                        </RelativeLayout>
+
+                    </ScrollView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="18dip"
+                    android:layout_marginRight="18dip"
+                    android:layout_marginBottom="14dip"
+                    android:layout_alignParentBottom="true">
+
+                    <Button
+                        android:id="@+id/btnIgnore"
+                        android:layout_width="90dip"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="16sp"
+                        android:text="忽略"
+                        android:textStyle="bold"
+                        android:textColor="@color/xlmessagecenter_dialog_message_ignore_color"
+                        android:background="@mipmap/qm_btn_pop_message_notify_ignore"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textClose"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/qm_btn_pop_close" />
+    </RelativeLayout>
+</RelativeLayout>
