@@ -10,9 +10,4 @@
 # 扩展性强  
 可剥离客户端界面，可在SDK界面添加功能，可基于sdk开发
 # 全平台覆盖
-Android版本git：
-[GangSDKAndroid](https://github.com/qunmeng/GangSDKAndroid)
-iOS版本git：
-[GangSDKiOS](https://github.com/qunmeng/GangSDKiOS)
-Unity3D版本git：
-[GangSDKUnity](https://github.com/qunmeng/GangSDKUnity)
+[Android](https://github.com/qunmeng/GangSDKAndroid) & [iOS](https://github.com/qunmeng/GangSDKiOS) & [Unity](https://github.com/qunmeng/GangSDKUnity)
